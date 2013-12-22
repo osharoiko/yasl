@@ -46,7 +46,7 @@ lock() {
       # TODO(osharoiko): add a log record here
       # informing about stale lockfile
       if ! rm -f ${_lockfile} 1>/dev/null 2>&1; then
-        echo "lock: couldn't delete unused ${_lockfile}" 
+        echo "lock: couldn't delete unused ${_lockfile}"
         rc=255
         break
       fi
